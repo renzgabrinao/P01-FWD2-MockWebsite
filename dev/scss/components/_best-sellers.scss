@@ -1,13 +1,17 @@
 @use "./components/main" ;
 @use "./global";
-
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
 $footer-text-color: grey;
 $hover-orange: orange;
 // Best Sellers h1 Text
 .best-sellers h1{
     text-align: center;
     justify-content: center;
-    color: orange;
+    color: black;
+    font-weight: 300;
+    font-size: 50px;
 }
 
 //Best Sellers
@@ -23,18 +27,18 @@ $hover-orange: orange;
   justify-content: center;
   p{
     &:hover {
-        color: orange;
+        color: #f15a24;
         cursor: pointer
     }
 
   }
   button{
-    background-color: orange;
+    background-color: #f15a24;
     border: none;
     color: white;
     padding: 15px;
     border-radius: 4px;
-    width: 25%;
+    width: 125px;
     &:hover {cursor: pointer;}
   }
   /*.speakers-items-1{
@@ -44,3 +48,24 @@ $hover-orange: orange;
 .speakers-items img{
     height: 50%;
 }
+@media (max-width: 1024px) {
+  .speakers-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .speakers-items {
+    grid-template-columns: repeat(3, 1fr);
+    img{
+      height: 30%;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .speakers-items {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+
+
