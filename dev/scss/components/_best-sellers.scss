@@ -1,0 +1,46 @@
+@use "./components/main" ;
+@use "./global";
+
+$footer-text-color: grey;
+$hover-orange: orange;
+// Best Sellers h1 Text
+.best-sellers h1{
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+//Best Sellers
+.speakers-container{
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.speakers-items{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  p{
+    &:hover {
+        color: orange;
+        cursor: pointer
+    }
+
+  }
+  button{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    width: 25%;
+    &:hover {cursor: pointer;}
+  }
+  /*.speakers-items-1{
+    //border: 1px solid rebeccapurple;
+  }*/
+}
+.speakers-items img{
+    height: 50%;
+}
