@@ -1,0 +1,71 @@
+@use "./components/main" ;
+@use "./global";
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+$footer-text-color: grey;
+$hover-orange: orange;
+// Best Sellers h1 Text
+.best-sellers h1{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+//Best Sellers
+.speakers-container{
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.speakers-items{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  p{
+    &:hover {
+        color: #f15a24;
+        cursor: pointer
+    }
+
+  }
+  button{
+    background-color: #f15a24;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    width: 125px;
+    &:hover {cursor: pointer;}
+  }
+  /*.speakers-items-1{
+    //border: 1px solid rebeccapurple;
+  }*/
+}
+.speakers-items img{
+    height: 50%;
+}
+@media (max-width: 1024px) {
+  .speakers-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .speakers-items {
+    grid-template-columns: repeat(3, 1fr);
+    img{
+      height: 30%;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .speakers-items {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+
+
