@@ -1,11 +1,15 @@
 @use "./components/main" ;
+@use "./global";
 
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
 $footer-text-color: grey;
-$hover-orange: orange;
+$hover-orange: #f15a24;
 
 .footer-container{
 
-    
+    width: 100%;
     border-top: 1px --color-black solid;
     
     .footer-inside{
@@ -13,7 +17,8 @@ $hover-orange: orange;
     grid-template-columns: 25% 25% 25% 25%;
     background-color: #ebebeb;
     border-top: black 1px solid;
-    min-height: 275px;
+    
+    min-height: 300px;
     padding-top: 20px;
 
     }
