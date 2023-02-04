@@ -5,11 +5,6 @@ $(".hamburger").click(() => {
   $(".nav-bar").toggleClass("active");
 });
 
-$(".hamburger").click(() => {
-  $(".hamburger").toggleClass("active");
-  $(".nav-bar").toggleClass("active");
-});
-
 // Shop By Room
 $(".show-slider").slick({
   prevArrow: $(".prev"),
