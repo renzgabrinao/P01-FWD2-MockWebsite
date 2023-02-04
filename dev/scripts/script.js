@@ -1,2 +1,6 @@
 // Write your JavaScript here...
-// $(".carousel").slick();
+
+$(".hamburger").click(() => {
+  $(".hamburger").toggleClass("active");
+  $(".nav-bar").toggleClass("active");
+});

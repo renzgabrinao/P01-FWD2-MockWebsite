@@ -1,11 +1,11 @@
 // Place your Sass imports here...
 @use "./global";
 @use "./component/header";
+@use "./components/main";
 
 body {
   margin: 0;
 }
-@use "./components/main";
 .sr-only {
   position: absolute;
   width: 1px;

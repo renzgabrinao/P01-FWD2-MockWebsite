@@ -1,16 +1,90 @@
 header {
-  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 50px;
+
+  // logo and hamburger styling
+  .logo-burger {
+    position: relative;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
 
 
+    // audio engine burger styling
+    .logo {
+      margin: auto 0;
+    }
+
+    // hamburger icon styling
+    .hamburger {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .bar {
+        display: inline-block;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        transition: all 0.2s ease-in-out;
+      }
+
+      // animate hambuger when clicked
+      &.active {
+        .bar:nth-child(3) {
+          opacity: 0;
+        }
+        .bar:nth-child(2) {
+          transform: translateY(14px) rotate(-45deg);
+        }
+        .bar:nth-child(4) {
+          transform: translateY(-14px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  // nav bar styling
   .nav-bar {
-    // visibility: hidden;
+    background-color: black;
+    position: relative;
+    top: -21em;
+    z-index: -1;
+    height: 320px;
+    transition: all 0.2s ease-in-out;
 
     ul {
       list-style: none;
-      padding: 0;
-      margin: 0;
-      color: white;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
     }
+
+    li {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 0 0 20px;
+    }
+
+    .nav-icons {
+      img {
+        height: 100%;
+      }
+    }
+
+    &.active {
+      top: -16px;
+    }
+
+
   }
 }
-
