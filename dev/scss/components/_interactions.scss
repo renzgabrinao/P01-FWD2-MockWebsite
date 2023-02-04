@@ -1,0 +1,40 @@
+@use "./components/main" ;
+@use "./global";
+html{
+    scroll-behavior: smooth;
+}
+
+.interactions-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.interactions{
+    display: flex;
+
+    img{
+        height: 50px;
+        padding-top: 50px;
+    }
+    a{
+        color: var(--color-orange);
+        font-size: 25px;
+        padding-left: 50px;
+
+    }
+}
+
+
+
+#up-arrow{
+    scroll-behavior: smooth;
+    &:hover{
+        cursor: pointer;
+    }
+}
+  
+/*.email{
+    
+}
+*/

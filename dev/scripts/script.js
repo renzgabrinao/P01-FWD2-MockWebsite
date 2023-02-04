@@ -38,3 +38,8 @@ $('.show-slider').slick({
       // instead of a settings object
     ]
   });
+
+  //Top Arrow / Scroll To Top Of Page -MP
+  function scrollToTop(){
+    window.scrollTo(0, 0);
+  }
