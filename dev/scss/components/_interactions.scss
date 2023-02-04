@@ -1,0 +1,56 @@
+@use "./components/main" ;
+@use "./global";
+html{
+    scroll-behavior: smooth;
+}
+
+.interactions-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    
+}
+
+.interactions{
+    display: flex;
+
+    img{
+        height: 50px;
+        padding-top: 50px;
+    }
+    a{
+        color: var(--color-orange);
+        font-size: 25px;
+        padding-left: 50px;
+
+    }
+}
+
+
+
+
+.top{
+    padding-top: 20px;
+}
+#up-arrow{
+    scroll-behavior: smooth;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+.email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    img{
+        height: 50px;
+    }
+    p{
+        font-size: large;
+
+    }
+   
+}
