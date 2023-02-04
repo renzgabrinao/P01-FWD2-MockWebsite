@@ -7,7 +7,8 @@ html{
 .interactions-container{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 75% 25%;
+    
 }
 
 .interactions{
@@ -27,14 +28,29 @@ html{
 
 
 
+
+.top{
+    padding-top: 20px;
+}
 #up-arrow{
     scroll-behavior: smooth;
+    
     &:hover{
         cursor: pointer;
     }
 }
-  
-/*.email{
-    
+.email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    img{
+        height: 50px;
+    }
+    p{
+        font-size: large;
+
+    }
+   
 }
-*/
