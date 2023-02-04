@@ -1,8 +1,10 @@
 header {
   color: white;
+  background-color: black;
   position: sticky;
   top: 0;
   height: 50px;
+  // padding: 0 2%;
 
   // logo and hamburger styling
   .logo-burger {
@@ -13,8 +15,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10px;
-
+    padding-left: 1%;
 
     // audio engine burger styling
     .logo {
@@ -29,6 +30,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      padding-right: 1%;
 
       .bar {
         display: inline-block;
@@ -61,6 +63,7 @@ header {
     z-index: -1;
     height: 320px;
     transition: all 0.2s ease-in-out;
+    padding-right: 1%;
 
     ul {
       list-style: none;
@@ -76,13 +79,65 @@ header {
     }
 
     .nav-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
       img {
-        height: 100%;
+        width: 30px;
+        height: 30px;
+        margin-right: 2%;
       }
     }
 
     &.active {
       top: -16px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+
+    .logo-burger {
+      // hide hamburger
+      .hamburger {
+          display: none;
+      }
+    }
+
+    .nav-bar {
+      position: static;
+      height: 50px;
+      width: 50%;
+
+      ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 0;
+        }
+
+        .nav-icons {
+          width: 15%;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+              width: 20px;
+              height: 20px;
+          }
+        }
+
+      }
+
     }
 
 
