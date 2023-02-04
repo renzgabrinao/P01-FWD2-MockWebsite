@@ -2,6 +2,9 @@
 @use "./global";
 @use "./component/header";
 @use "./components/main";
+@use "./components/best-sellers";
+@use "./components/footer";
+@use "./components/show-by-room";
 
 body {
   margin: 0;

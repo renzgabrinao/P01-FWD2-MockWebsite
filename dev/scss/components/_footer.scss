@@ -1,0 +1,45 @@
+@use "./components/main" ;
+@use "./global";
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+$footer-text-color: grey;
+$hover-orange: #f15a24;
+
+.footer-container{
+
+    width: 100%;
+    border-top: 1px --color-black solid;
+    
+    .footer-inside{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #ebebeb;
+    border-top: black 1px solid;
+    
+    min-height: 300px;
+    padding-top: 20px;
+
+    }
+    li{
+        list-style: none;
+        padding-bottom: 15px;
+        font-size: 18px;
+        color: $footer-text-color;
+        &:hover {
+            color: $hover-orange; 
+            cursor: pointer;
+        }
+    }
+    @media (max-width: 500px) {
+      .footer-inside {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 370px) {
+        .footer-inside {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+}
