@@ -43,3 +43,7 @@ $(".show-slider").slick({
     // instead of a settings object
   ],
 });
+
+function scrollToTop(){
+  window.scrollTo(0, 0);
+}
