@@ -8,7 +8,9 @@ html{
     width: 100%;
     display: grid;
     grid-template-columns: 75% 25%;
-    
+}
+.top{
+    padding-top: 20px;
 }
 
 .interactions{
@@ -28,17 +30,14 @@ html{
 
 
 
-
-.top{
-    padding-top: 20px;
-}
 #up-arrow{
     scroll-behavior: smooth;
-    
+
     &:hover{
         cursor: pointer;
     }
 }
+
 .email{
     display: flex;
     justify-content: center;
@@ -52,5 +51,4 @@ html{
         font-size: large;
 
     }
-   
 }
