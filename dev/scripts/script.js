@@ -47,3 +47,11 @@ $(".show-slider").slick({
 function scrollToTop(){
   window.scrollTo(0, 0);
 }
+
+
+// Start of Video Popup Script
+
+//Video element
+var video = document.getElementById("video");
+
+//End of Video Popup Script

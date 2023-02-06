@@ -10,6 +10,7 @@ $orange: var(--color-orange);
 .video-container{
     position: relative;
     transition: all 0.2s ease-in-out;
+
     h2{
         position: absolute;
         width: 100%;
@@ -32,6 +33,7 @@ $orange: var(--color-orange);
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 50;
+            cursor: pointer;
         }
         .background-icon{
             font-size: 18.3vw;
@@ -46,7 +48,6 @@ $orange: var(--color-orange);
     }
 }
 
-
 .video-popup{
     display: none;
     position: fixed;
@@ -54,28 +55,50 @@ $orange: var(--color-orange);
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $transparent-black;
+    background-color: var(--color-transparent-black);
     z-index: 1000;
-    .video-popup-container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 750px;
-        object-fit: cover;
-        background-color: $black;
+
+    .pop-up-element{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  
     .video-popup-close{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50px;
-        height: 50px;
-        background-color: $black;
-        color: $white;
-        font-size: 30px;
-        text-align: center;
-        line-height: 50px;
-        cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      width: 100vw;
+      background: none;
     }
-}
+
+    .video-popup-container{
+      justify-self: center;
+      padding: 15px;
+      background-color: $white;
+    }
+    .video-element{
+        width: 100%;
+        border: 3px solid $white;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
+
+    }
+    .video-element:focus {
+        border: 3px solid #34c3eb;
+      }
+
+    .close-text{
+        background: $black;
+        color: $white;
+        font-size: 4vw;
+        cursor: pointer;
+        z-index: 1000;
+        margin: 0;
+    }
+    .close-text:hover{
+        color: $orange;
+    }
+  
+
+  }
