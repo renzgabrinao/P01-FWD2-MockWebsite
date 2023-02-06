@@ -70,12 +70,21 @@ var videoPopup = document.getElementById("video-popup");
 //Play video
 playButton.addEventListener("click", function() {
   videoPopup.style.display = "block";
+  document.body.style.overflow = "hidden";
   video.play();
 });
 
 //Close video
 closeButton.addEventListener("click", function() {
   videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//Click outside video
+videoPopup.addEventListener("click", function() {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
   video.pause();
 });
 
