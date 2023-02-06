@@ -57,3 +57,27 @@ $(".show-slider").slick({
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+
+
+// Start of Video Popup Script
+
+//Video element
+var video = document.querySelector("#video-id");
+var playButton = document.getElementById("play-button");
+var closeButton = document.getElementById("close-button");
+var videoPopup = document.getElementById("video-popup");
+
+//Play video
+playButton.addEventListener("click", function() {
+  videoPopup.style.display = "block";
+  video.play();
+});
+
+//Close video
+closeButton.addEventListener("click", function() {
+  videoPopup.style.display = "none";
+  video.pause();
+});
+
+
+//End of Video Popup Script
