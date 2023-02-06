@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Put Web Page Title Here...</title>
 
-		<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
-		<!-- Put Google Fonts Here -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Put Web Page Title Here...</title>
 
-		<!-- end Google Fonts -->
+	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
+	<!-- Put Google Fonts Here -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+		rel="stylesheet">
 
-		<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-		<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
-	</head>
-	<body>
-		<header>
-			<!-- Renz -->
-			<div class="logo-burger">
-				<div class="logo"> <!-- website logo -->
-					<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
-				</div>
-		
-				<div class="hamburger"> <!-- hamburger menu -->
-					<span class="sr-only"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
+	<!-- end Google Fonts -->
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/8052e1056c.js" crossorigin="anonymous"></script>
+
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
+</head>
+
+<body>
+	<header>
+		<!-- Renz -->
+		<div class="logo-burger">
+			<div class="logo"> <!-- website logo -->
+				<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
+			</div>
+
+			<div class="hamburger"> <!-- hamburger menu -->
+				<span class="sr-only"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</div>
+
+
+		<nav class="nav-bar"> <!-- nav bar -->
+			<ul>
+				<li>Speakers</li>
+				<li>Components</li>
+				<li>Deals</li>
+				<li>Explore</li>
+				<li>Support</li>
+				<li class="nav-icons">
+					<!-- location, search, cart-->
+					<img src="./images/nav-location.png" alt="">
+					<img src="./images/nav-search.png" alt="">
+					<img src="./images/nav-shopping-cart.png" alt="">
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!-- top carousel - Renz -->
+		<section></section>
+
+		<!-- best sellers - Mason -->
+		<section class="best-sellers">
+			<h1>BEST SELLERS</h1>
+			<div class="speakers-container">
+				<div class="speakers-items">
+					<div class="speakers-items-1">
+						<img src="/images/best-seller-01-speaker-red.jpg"></img>
+						<p>A2+ DESKTOP SPEAKERS</p>
+						<button>SHOP NOW</button>
+					</div>
+					<div class="speakers-items-2">
+						<img src="/images//best-seller-02-bluetooth-receiver.jpg"></img>
+						<p>B1 BLUETOOTH MUSIC RECEIVER</p>
+						<button>SHOP NOW</button>
+					</div>
+					<div class="speakers-items-3">
+						<img src="/images//best-seller-03-speaker-black.jpg"></img>
+						<p>A5+ WIRELESS SPEAKERS</p>
+						<button>SHOP NOW</button>
+					</div>
 				</div>
 			</div>
-		
-		
-			<nav class="nav-bar"> <!-- nav bar -->
-				<ul>
-					<li>Speakers</li>
-					<li>Components</li>
-					<li>Deals</li>
-					<li>Explore</li>
-					<li>Support</li>
-					<li class="nav-icons">
-						<!-- location, search, cart-->
-						<img src="./images/nav-location.png" alt="">
-						<img src="./images/nav-search.png" alt="">
-						<img src="./images/nav-shopping-cart.png" alt="">
-					</li>
-				</ul>
-			</nav>
-		</header>
+		</section>
 
-		<main>
-			<!-- top carousel - Renz -->
-			<section></section>
-			
-			<!-- best sellers - Mason -->
-			<section class="best-sellers">
-				<h1>BEST SELLERS</h1>
-				<div class="speakers-container">
-					<div class="speakers-items">
-						<div class="speakers-items-1">
-							<img src="/images/best-seller-01-speaker-red.jpg"></img>
-							<p>A2+ DESKTOP SPEAKERS</p>
-							<button>SHOP NOW</button>
-						</div>
-							<div class="speakers-items-2">
-							<img src="/images//best-seller-02-bluetooth-receiver.jpg"></img>
-							<p>B1 BLUETOOTH MUSIC RECEIVER</p>
-							<button>SHOP NOW</button>
-						</div>
-						<div class="speakers-items-3">
-							<img src="/images//best-seller-03-speaker-black.jpg"></img>
-							<p>A5+ WIRELESS SPEAKERS</p>
-							<button>SHOP NOW</button>
-						</div>
-					</div> 
-				</div>
-			</section>
-
-      <!-- shop by room or device - Mason -->
-      <section>
+		<!-- shop by room or device - Mason -->
+		<section>
 			<!--<div class="show-by-room-container">
 					<h1>SHOP BY ROOM OR DEVICE</h1>
 					<section class="show-slider" style="width: 1080px;">
@@ -105,119 +112,127 @@
 						<div class="prev">&lt;</div>
 					  </div>
 				</div>
-				-->	
-			</section>
+				-->
+		</section>
 
-      <!-- all new, feeling lucky, our story - Brayden -->
-      <section>
-        <div class="all-new-container">
-          <h2>ALL NEW</h2>
-          <h3>The A5+ Wireless Speakers</h3>
-          <button>LEARN MORE</button>
-        </div>
-        <div class="feeling-lucky-container">
-          <h2>FEELING LUCKY</h2>
-          <h3>The A5+ Wireless Speakers</h3>
-          <button>LEARN MORE</button>
-        </div>
-        <div class="our-story-container">
-          <h2>OUR STORY</h2>
-          <p>
-            Audioengine was founded with a simple<br />
-            goal.<br />
-            Build a speaker that sounds great, is easy<br />
-            to set up and use, and that makes people<br />
-            want to listen to music every day.
-          </p>
-          <button>LEARN MORE</button>
-        </div>
-      </section>
-
-			<!-- in the news - Scott -->
-			<section>
-				<div class="news-container">
-					<div class="news-source">
-					</div>
-
-				</div>
-			</section>
-
-			<!-- video player - Scott -->
-			<section>
-				<div class="videoContainer">
-					<h2>This is Audio Engine</h2>
-					<video id="video" width="100%" height="100%" controls>
-						<source src="./media/this-is-audioengine.mp4" type="video/mp4">
-					</video>
-				</div>
-			</section>
-
-		</main>
-		<div class="interactions-container">
-			<div class="interactions">
-				<div class="logos">
-					<div class="top">
-						<a class="scroll-top" onclick="scrollToTop()" id="up-arrow">&#8593;</a><a>TOP</a>
-					</div>
-					<img src="images/facebook_logo.png"></img>
-
-					<img src="images/instagram_logo.png"></img>
-
-					<img src="images/pintrest_logo.png"></img>
-
-					<img src="images/youtube_logo.png"></img>
-				</div>
+		<!-- all new, feeling lucky, our story - Brayden -->
+		<section>
+			<div class="all-new-container">
+				<h2>ALL NEW</h2>
+				<h3>The A5+ Wireless Speakers</h3>
+				<button>LEARN MORE</button>
 			</div>
-			<div class="email">
+			<div class="feeling-lucky-container">
+				<h2>FEELING LUCKY</h2>
+				<h3>The A5+ Wireless Speakers</h3>
+				<button>LEARN MORE</button>
+			</div>
+			<div class="our-story-container">
+				<h2>OUR STORY</h2>
+				<p>
+					Audioengine was founded with a simple<br />
+					goal.<br />
+					Build a speaker that sounds great, is easy<br />
+					to set up and use, and that makes people<br />
+					want to listen to music every day.
+				</p>
+				<button>LEARN MORE</button>
+			</div>
+		</section>
 
-				<img src="images/email_logo.png"></img>
-				<p>EMAIL SIGN UP</p>
-			</div> 
+		<!-- in the news - Scott -->
+		<section>
+			<div class="news-container">
+				<div class="news-source">
+				</div>
+
+			</div>
+		</section>
+
+		<!-- video player - Scott -->
+		<section>
+			<div class="video-container">
+				<h2>THIS IS AUDIO ENGINE</h2>
+				
+				<i class="fa-solid fa-play"></i>
+				<i class="fa-solid fa-play background-icon"></i>
+				<img class="video-background" src="./images/bg-this-is-audio-engine-section.jpg"></img>
+			</div>
+			<div class="video-popup">
+				<video class="video-popup-container" id="video-popup" controls>
+					<source src="./media/this-is-audioengine.mp4" type="video/mp4">
+				</video>
+			</div>
+
+		</section>
+
+	</main>
+	<div class="interactions-container">
+		<div class="interactions">
+			<div class="logos">
+				<div class="top">
+					<a class="scroll-top" onclick="scrollToTop()" id="up-arrow">&#8593;</a><a>TOP</a>
+				</div>
+				<img src="images/facebook_logo.png"></img>
+
+				<img src="images/instagram_logo.png"></img>
+
+				<img src="images/pintrest_logo.png"></img>
+
+				<img src="images/youtube_logo.png"></img>
+			</div>
 		</div>
-		
-		<div class="footer-container">
-			<div class="footer-inside">
-				<div class="first">
-					<ul>
-						<li>Speakers</li>
-						<li>Components</li>
-						<li>Refurbished</li>
-						<li>Find A Store</li>
-						
-					</ul>
-				</div>
-				<div class="second">
-					<ul>
-						<li>Support</li>
-						<li>Explore</li>
-						<li>About</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div class="third">
-					<ul>
-						<li>Press</li>
-						<li>Warranty</li>
-						<li>Military</li>
-						<li>Apps</li>
-						
-					</ul>
-				</div>
-				<div class="fourth">
-					<ul>
-						<li>Privacy</li>
-						<li>Terms</li>
-						<li>Legal</li>
-						<li>News</li>
-					</ul>
-				</div>
-			</div>
-		  </div>
+		<div class="email">
 
-		<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-		<script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
-		<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-		<script src="scripts/script.min.js?cachebuster=1"></script>
-		<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
-	</body>
+			<img src="images/email_logo.png"></img>
+			<p>EMAIL SIGN UP</p>
+		</div>
+	</div>
+
+	<div class="footer-container">
+		<div class="footer-inside">
+			<div class="first">
+				<ul>
+					<li>Speakers</li>
+					<li>Components</li>
+					<li>Refurbished</li>
+					<li>Find A Store</li>
+
+				</ul>
+			</div>
+			<div class="second">
+				<ul>
+					<li>Support</li>
+					<li>Explore</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="third">
+				<ul>
+					<li>Press</li>
+					<li>Warranty</li>
+					<li>Military</li>
+					<li>Apps</li>
+
+				</ul>
+			</div>
+			<div class="fourth">
+				<ul>
+					<li>Privacy</li>
+					<li>Terms</li>
+					<li>Legal</li>
+					<li>News</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js?cachebuster=1"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+</body>
+
 </html>
