@@ -99,6 +99,9 @@ $orange: var(--color-orange);
     .close-text:hover{
         color: $orange;
     }
-  
-
   }
+
+//media queries for tablet min width
+@media (min-width: 768px) {
+
+}
