@@ -1,11 +1,12 @@
 // Place your Sass imports here...
 @use "./global";
-@use "./component/header";
+@use "./components/header";
 @use "./components/main";
 @use "./components/best-sellers";
 @use "./components/footer";
 @use "./components/show-by-room";
 @use "./components/interactions";
+@use "./components/video-popup";
 
 body {
   margin: 0;
