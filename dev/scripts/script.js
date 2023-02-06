@@ -5,6 +5,16 @@ $(".hamburger").click(() => {
   $(".nav-bar").toggleClass("active");
 });
 
+// Toggle search bar
+
+$(".search-button").click(() => {
+  $(".search-bar").toggleClass("active");
+});
+
+$(".close-button").click(() => {
+  $(".search-bar").toggleClass("active");
+});
+
 // Shop By Room
 $(".show-slider").slick({
   prevArrow: $(".prev"),
@@ -44,6 +54,6 @@ $(".show-slider").slick({
   ],
 });
 
-function scrollToTop(){
+function scrollToTop() {
   window.scrollTo(0, 0);
 }
