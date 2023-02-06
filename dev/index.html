@@ -19,71 +19,106 @@
 	<!-- Font Awesome Icons -->
 	<script src="https://kit.fontawesome.com/8052e1056c.js" crossorigin="anonymous"></script>
 
-	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
-</head>
-
-<body>
-	<header>
-		<!-- Renz -->
-		<div class="logo-burger">
-			<div class="logo"> <!-- website logo -->
-				<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
+		<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+		<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
+	</head>
+	<body>
+		<header>
+			<!-- Renz -->
+			<div class="search-bar">
+				<div class="close-button">
+					<p>Close</p>
+					<img src="./images/close-icon.svg" alt="close icon">
+				</div>
+				<form action="#" method="GET">
+					<img src="./images/nav-search.svg" alt="search icon" class="search-icon">
+					<input type="text" placeholder="Search Audioengine">
+				</form>
 			</div>
 
-			<div class="hamburger"> <!-- hamburger menu -->
-				<span class="sr-only"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-		</div>
-
-
-		<nav class="nav-bar"> <!-- nav bar -->
-			<ul>
-				<li>Speakers</li>
-				<li>Components</li>
-				<li>Deals</li>
-				<li>Explore</li>
-				<li>Support</li>
-				<li class="nav-icons">
-					<!-- location, search, cart-->
-					<img src="./images/nav-location.png" alt="">
-					<img src="./images/nav-search.png" alt="">
-					<img src="./images/nav-shopping-cart.png" alt="">
-				</li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-		<!-- top carousel - Renz -->
-		<section></section>
-
-		<!-- best sellers - Mason -->
-		<section class="best-sellers">
-			<h1>BEST SELLERS</h1>
-			<div class="speakers-container">
-				<div class="speakers-items">
-					<div class="speakers-items-1">
-						<img src="/images/best-seller-01-speaker-red.jpg"></img>
-						<p>A2+ DESKTOP SPEAKERS</p>
-						<button>SHOP NOW</button>
-					</div>
-					<div class="speakers-items-2">
-						<img src="/images//best-seller-02-bluetooth-receiver.jpg"></img>
-						<p>B1 BLUETOOTH MUSIC RECEIVER</p>
-						<button>SHOP NOW</button>
-					</div>
-					<div class="speakers-items-3">
-						<img src="/images//best-seller-03-speaker-black.jpg"></img>
-						<p>A5+ WIRELESS SPEAKERS</p>
-						<button>SHOP NOW</button>
-					</div>
+			<div class="logo-burger">
+				<div class="logo"> <!-- website logo -->
+					<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
+				</div>
+		
+				<div class="hamburger"> <!-- hamburger menu -->
+					<span class="sr-only"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
 				</div>
 			</div>
-		</section>
+		
+			<nav class="nav-bar"> <!-- nav bar -->
+				<ul>
+					<li><a href="#">SPEAKERS</a></li>
+					<li><a href="#">COMPONENTS</a></li>
+					<li><a href="#">DEALS</a></li>
+					<li><a href="#">EXPLORE</a></li>
+					<li><a href="#">SUPPORT</a></li>
+					<li class="nav-icons">
+						<!-- location, search, cart-->
+						<a href="#"><img src="./images/nav-location.svg" alt=""></a>
+						<div class="search-button"><img src="./images/nav-search.svg" alt=""></div>
+						<a href="#"><img src="./images/nav-cart.svg" alt=""></a>
+					</li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+			<!-- top carousel - Renz -->
+			<section class="banner">
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div></div>
+				</div>
+			</section>
+			
+			<!-- best sellers - Mason -->
+			<section class="best-sellers">
+				<h1>BEST SELLERS</h1>
+				<div class="speakers-container">
+					<div class="speakers-items">
+						<div class="speakers-items-1">
+							<img src="/images/best-seller-01-speaker-red.jpg"></img>
+							<p>A2+ DESKTOP SPEAKERS</p>
+							<button>SHOP NOW</button>
+						</div>
+							<div class="speakers-items-2">
+							<img src="/images//best-seller-02-bluetooth-receiver.jpg"></img>
+							<p>B1 BLUETOOTH MUSIC RECEIVER</p>
+							<button>SHOP NOW</button>
+						</div>
+						<div class="speakers-items-3">
+							<img src="/images//best-seller-03-speaker-black.jpg"></img>
+							<p>A5+ WIRELESS SPEAKERS</p>
+							<button>SHOP NOW</button>
+						</div>
+					</div> 
+				</div>
+			</section>
 
 		<!-- shop by room or device - Mason -->
 		<section>
