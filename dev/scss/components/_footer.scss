@@ -1,19 +1,25 @@
 @use "./components/main" ;
+@use "./global";
 
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
 $footer-text-color: grey;
-$hover-orange: orange;
+$hover-orange: #f15a24;
 
 .footer-container{
 
-    
+    width: 100%;
     border-top: 1px --color-black solid;
+
     
     .footer-inside{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     background-color: #ebebeb;
     border-top: black 1px solid;
-    min-height: 275px;
+    padding-left: 50px;
+    min-height: 300px;
     padding-top: 20px;
 
     }
@@ -28,8 +34,17 @@ $hover-orange: orange;
         }
     }
     @media (max-width: 500px) {
+      .footer-inside {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 370px) {
         .footer-inside {
-          grid-template-columns: repeat(1, 100%);
+
+
+          grid-template-columns: repeat(1, 1fr);
+          padding-left: 0;
+
         }
       }
 }

@@ -1,3 +1,22 @@
 // Place your Sass imports here...
 @use "./global";
+@use "./component/header";
 @use "./components/main";
+@use "./components/best-sellers";
+@use "./components/footer";
+@use "./components/show-by-room";
+@use "./components/interactions";
+
+body {
+  margin: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
