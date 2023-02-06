@@ -82,6 +82,7 @@ $orange: var(--color-orange);
         border: 3px solid $white;
         border-radius: 5px;
         transition: 0.5s ease-in-out;
+        z-index: 1000;
 
     }
     .video-element:focus {
@@ -93,7 +94,7 @@ $orange: var(--color-orange);
         color: $white;
         font-weight: 400;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 95;
         margin: 0;
         padding: 5px 15px 5px 15px;
     }
@@ -129,5 +130,13 @@ $orange: var(--color-orange);
     }
     .pop-up-element{
         width: 75%;
+    }
+}
+
+//media queries for desktop min width
+
+@media (min-width: 1024px) {
+    .pop-up-element{
+        width: 55%;
     }
 }
