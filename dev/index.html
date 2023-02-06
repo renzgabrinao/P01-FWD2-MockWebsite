@@ -7,6 +7,9 @@
 
 		<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 		<!-- Put Google Fonts Here -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- end Google Fonts -->
 
@@ -16,6 +19,35 @@
 	<body>
 		<header>
 			<!-- Renz -->
+			<div class="logo-burger">
+				<div class="logo"> <!-- website logo -->
+					<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
+				</div>
+		
+				<div class="hamburger"> <!-- hamburger menu -->
+					<span class="sr-only"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+		
+		
+			<nav class="nav-bar"> <!-- nav bar -->
+				<ul>
+					<li>Speakers</li>
+					<li>Components</li>
+					<li>Deals</li>
+					<li>Explore</li>
+					<li>Support</li>
+					<li class="nav-icons">
+						<!-- location, search, cart-->
+						<img src="./images/nav-location.png" alt="">
+						<img src="./images/nav-search.png" alt="">
+						<img src="./images/nav-shopping-cart.png" alt="">
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<main>
@@ -46,8 +78,8 @@
 				</div>
 			</section>
 
-			<!-- shop by room or device - Mason -->
-			<section>
+      <!-- shop by room or device - Mason -->
+      <section>
 			<!--<div class="show-by-room-container">
 					<h1>SHOP BY ROOM OR DEVICE</h1>
 					<section class="show-slider" style="width: 1080px;">
@@ -76,17 +108,73 @@
 				-->	
 			</section>
 
-			<!-- all new, feeling lucky, our story - Brayden -->
-			<section></section>
+      <!-- all new, feeling lucky, our story - Brayden -->
+      <section>
+        <div class="all-new-container">
+          <h2>ALL NEW</h2>
+          <h3>The A5+ Wireless Speakers</h3>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="feeling-lucky-container">
+          <h2>FEELING LUCKY</h2>
+          <h3>The A5+ Wireless Speakers</h3>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="our-story-container">
+          <h2>OUR STORY</h2>
+          <p>
+            Audioengine was founded with a simple<br />
+            goal.<br />
+            Build a speaker that sounds great, is easy<br />
+            to set up and use, and that makes people<br />
+            want to listen to music every day.
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+      </section>
 
 			<!-- in the news - Scott -->
-			<section></section>
+			<section>
+				<div class="news-container">
+					<div class="news-source">
+					</div>
+
+				</div>
+			</section>
 
 			<!-- video player - Scott -->
-			<section></section>
+			<section>
+				<div class="videoContainer">
+					<h2>This is Audio Engine</h2>
+					<video id="video" width="100%" height="100%" controls>
+						<source src="./media/this-is-audioengine.mp4" type="video/mp4">
+					</video>
+				</div>
+			</section>
 
 		</main>
+		<div class="interactions-container">
+			<div class="interactions">
+				<div class="logos">
+					<div class="top">
+						<a class="scroll-top" onclick="scrollToTop()" id="up-arrow">&#8593;</a><a>TOP</a>
+					</div>
+					<img src="images/facebook_logo.png"></img>
 
+					<img src="images/instagram_logo.png"></img>
+
+					<img src="images/pintrest_logo.png"></img>
+
+					<img src="images/youtube_logo.png"></img>
+				</div>
+			</div>
+			<div class="email">
+
+				<img src="images/email_logo.png"></img>
+				<p>EMAIL SIGN UP</p>
+			</div> 
+		</div>
+		
 		<div class="footer-container">
 			<div class="footer-inside">
 				<div class="first">
