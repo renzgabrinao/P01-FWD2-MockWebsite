@@ -68,7 +68,7 @@ $orange: var(--color-orange);
     .video-popup-close{
       display: flex;
       justify-content: flex-end;
-      width: 100vw;
+    //   width: 100vw;
       background: none;
     }
 
@@ -91,17 +91,43 @@ $orange: var(--color-orange);
     .close-text{
         background: $black;
         color: $white;
-        font-size: 4vw;
+        font-weight: 400;
         cursor: pointer;
         z-index: 1000;
         margin: 0;
+        padding: 5px 15px 5px 15px;
     }
     .close-text:hover{
-        color: $orange;
+        background: $orange;
     }
   }
 
+//media queries for mobile min width
+@media (min-width: 320px) {
+    .video-popup-close{
+        width:100vw;
+    }
+    .close-text{
+        font-size: 3vw;
+    }
+}
+
 //media queries for tablet min width
 @media (min-width: 768px) {
+    .video-popup-container{
+        // width: 650px;
+    }
+    .video-popup-close{
+        width: 101%;
+    }
 
+    .close-text {
+        position: relative;
+        top: 18px;
+        font-size: 1rem;
+        
+    }
+    .pop-up-element{
+        width: 75%;
+    }
 }
