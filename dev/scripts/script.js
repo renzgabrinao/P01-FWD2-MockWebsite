@@ -15,6 +15,14 @@ $(".close-button").click(() => {
   $(".search-bar").toggleClass("active");
 });
 
+// Banner carousel
+
+$(".banner").slick({
+  fade: true,
+  speed: 1000,
+  dots: true,
+});
+
 // Shop By Room
 $(".show-slider").slick({
   prevArrow: $(".prev"),
@@ -57,3 +65,34 @@ $(".show-slider").slick({
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+
+// Start of Video Popup Script
+
+//Video element
+var video = document.querySelector("#video-id");
+var playButton = document.getElementById("play-button");
+var closeButton = document.getElementById("close-button");
+var videoPopup = document.getElementById("video-popup");
+
+//Play video
+playButton.addEventListener("click", function () {
+  videoPopup.style.display = "block";
+  document.body.style.overflow = "hidden";
+  video.play();
+});
+
+//Close video
+closeButton.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//Click outside video
+videoPopup.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//End of Video Popup Script
