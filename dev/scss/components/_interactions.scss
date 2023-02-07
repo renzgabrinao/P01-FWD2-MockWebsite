@@ -15,7 +15,7 @@ html{
 
 .interactions{
     display: flex;
-
+    padding-left: 70px;
     img{
         height: 50px;
         padding-top: 50px;
@@ -23,7 +23,7 @@ html{
     a{
         color: var(--color-orange);
         font-size: 25px;
-        padding-left: 50px;
+        padding-left: 10px;
 
     }
 }
@@ -32,7 +32,7 @@ html{
 
 #up-arrow{
     scroll-behavior: smooth;
-
+    
     &:hover{
         cursor: pointer;
     }
@@ -40,10 +40,11 @@ html{
 
 .email{
     display: flex;
-    justify-content: center;
+    padding-left: 70px;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 30px;
+    white-space: nowrap;
     img{
         height: 50px;
     }
@@ -52,3 +53,20 @@ html{
 
     }
 }
+
+
+
+@media (max-width: 595px) {
+    .interactions-container {
+
+
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 0;
+      justify-content:start;
+      padding: 0;
+      width: 100%;
+    }
+    .email{
+        padding-top: 10px;
+    }
+  }
