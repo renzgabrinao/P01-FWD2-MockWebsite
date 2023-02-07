@@ -1,0 +1,67 @@
+.banner-carousel {
+
+  .banner {
+    z-index: 1;
+  }
+
+  // buttons styling
+  .slick-prev, .slick-next {
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: transparent;
+
+
+    // prev btn
+    &:not(.slick-next) {
+      left: 0.5%;
+      top: 50%;
+      background: url("../../images/banner-carousel-prev.svg") center no-repeat;
+    }
+
+    // next btn
+    &:not(.slick-prev) {
+      right: 0.5%;
+      top: 50%;
+      background: url("../../images/banner-carousel-next.svg") center no-repeat;
+    }
+  }
+
+  // dots styling 
+  .slick-dots {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+
+    li {
+      button {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(255, 120, 0, 0.4);
+        color: transparent;
+      }
+
+      &.slick-active {
+        button {
+          background-color: rgb(255, 120, 0);
+        }
+      }
+    }
+  }
+}
+
+
