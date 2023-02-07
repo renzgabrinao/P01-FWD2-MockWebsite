@@ -10,10 +10,10 @@ $(".show-slider").slick({
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 5,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -42,7 +42,7 @@ $(".show-slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-});
+}) (jQuery);
 
 function scrollToTop(){
   window.scrollTo(0, 0);
