@@ -4,6 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Put Web Page Title Here...</title>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Put Web Page Title Here...</title>
 
 		<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 		<!-- Put Google Fonts Here -->
@@ -12,13 +18,17 @@
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-		<!-- end Google Fonts -->
+	<!-- end Google Fonts -->
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/8052e1056c.js" crossorigin="anonymous"></script>
 
 		<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 		<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
 	</head>
 	<body>
 		<header>
+			<!-- Renz -->
 			<div class="search-bar">
 				<div class="close-button">
 					<p>Close</p>
@@ -30,7 +40,6 @@
 				</form>
 			</div>
 
-			<!-- Renz -->
 			<div class="logo-burger">
 				<div class="logo"> <!-- website logo -->
 					<img src="./images/logo-audioengine.png" alt="Audioengine logo" />
@@ -126,47 +135,81 @@
 				</div>
 			</section>
 
+		<!-- shop by room or device - Mason -->
+		<section>
+			<!--<div class="show-by-room-container">
       <!-- shop by room or device - Mason -->
       <section>
-			<!--<div class="show-by-room-container">
+		<div class="show-by-room">
+			<div class="show-by-room-container" style="width: 80%; margin: auto;">
 					<h1>SHOP BY ROOM OR DEVICE</h1>
-					<section class="show-slider" style="width: 1080px;">
-						<div class="show-slides">
-							<img src="images/shop-slider-01-speaker-white.jpg"></img>
-							<p id="show-items-text-1">With Sonos</p>
-						</div>
-						<div class="show-slides">
-							<img src="images/shop-slider-02-speaker-brown.jpg"></img>
-						</div>
-						<div class="show-slides">
-							<img src="images/shop-slider-03-speakers-brown.jpg"></img>
-						</div>
-						<div class="show-slides" >
-							<img src="images/shop-slider-04-speakers-brown.jpg"></img>
-						</div>
-						<div class="show-slides">
-							<img src="images/shop-slider-05-speakers-brown.jpg"></img>
-						</div>
-					</section>
-					<div class="buttons">
-						<div class="next">&gt;</div>
-						<div class="prev">&lt;</div>
-					  </div>
+					<div class="slide-container" >
+						<div class="slick-button prev"></div>
+						<section class="show-slider" style="width: 100%; justify-content: center;">
+							<div class="show-slides">
+								<img src="images/shop-slider-01-speaker-white.jpg"></img>
+								<p id="show-items-text">With Sonos</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-02-speaker-brown.jpg"></img>
+								<p id="show-items-text">With Siri</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-03-speakers-brown.jpg"></img>
+								<p id="show-items-text">With A Turntable</p>
+							</div>
+							<div class="show-slides" >
+								<img src="images/shop-slider-04-speakers-brown.jpg"></img>
+								<p id="show-items-text">TV Room</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-05-speakers-brown.jpg"></img>
+								<p id="show-items-text">Kitchen</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-06-speaker-brown.jpg"></img>
+								<p id="show-items-text">Patio</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-07-speakers-white.jpg"></img>
+								<p id="show-items-text">Office</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-08-speakers-white.jpg"></img>
+								<p id="show-items-text">Bedroom</p>
+							</div>
+							<div class="show-slides">
+								<img src="images/shop-slider-09-speaker-brown.jpg"></img>
+							</div>
+						</section>
+						<div class="slick-button next"></div>	
+					</div>
+					
 				</div>
-				-->	
-			</section>
+		</div>
+		</section>
 
       <!-- all new, feeling lucky, our story - Brayden -->
       <section>
         <div class="all-new-container">
-          <h2>ALL NEW</h2>
-          <h3>The A5+ Wireless Speakers</h3>
-          <button>LEARN MORE</button>
+          <div class="sub-contents">
+			  <div class="blurry-background"></div>
+			    <div class="clear-content">
+					<h2>ALL NEW</h2>
+					<h3>The A5+ Wireless Speakers</h3>
+					<button>LEARN MORE</button>
+		  		</div>
+		  </div>
         </div>
         <div class="feeling-lucky-container">
-          <h2>FEELING LUCKY</h2>
-          <h3>The A5+ Wireless Speakers</h3>
-          <button>LEARN MORE</button>
+			<div class="sub-contents">
+			  <div class="blurry-background"></div>
+				<div class="clear-content">
+					<h2>FEELING LUCKY</h2>
+					<h3>The A5+ Wireless Speakers</h3>
+					<button>LEARN MORE</button>
+		  		</div>
+			</div>
         </div>
         <div class="our-story-container">
           <h2>OUR STORY</h2>
@@ -181,78 +224,109 @@
         </div>
       </section>
 
-			<!-- in the news - Scott -->
-			<section></section>
-
-			<!-- video player - Scott -->
-			<section></section>
-
-		</main>
-		<div class="interactions-container">
-			<div class="interactions">
-				<div class="logos">
-					<div class="top">
-						<a class="scroll-top" onclick="scrollToTop()" id="up-arrow">&#8593;</a><a>TOP</a>
-					</div>
-					<img src="images/facebook_logo.png"></img>
-
-					<img src="images/instagram_logo.png"></img>
-
-					<img src="images/pintrest_logo.png"></img>
-
-					<img src="images/youtube_logo.png"></img>
+		<!-- in the news - Scott -->
+		<section>
+			<div class="news-container">
+				<div class="news-source">
 				</div>
-			</div>
-			<div class="email">
 
-				<img src="images/email_logo.png"></img>
-				<p>EMAIL SIGN UP</p>
-			</div> 
+			</div>
+		</section>
+
+		<!-- video player - Scott -->
+		<section>
+			<div class="video-container">
+				<h2>THIS IS AUDIO ENGINE</h2>
+				
+				<i id="play-button" class="fa-solid fa-play"></i>
+				<i class="fa-solid fa-play background-icon"></i>
+				<img class="video-background" src="./images/bg-this-is-audio-engine-section.jpg"></img>
+			</div>
+			<div class="video-popup" id="video-popup">
+				<div class="pop-up-element">
+				  
+				  <div class="video-popup-close">
+					<h2 id="close-button" class="close-text">CLOSE</h2>
+				  </div>
+				  <div class="video-popup-container">
+					<video class="video-element" id="video-id" controls>
+						<source src="./media/this-is-audioengine.mp4" type="video/mp4">
+					  </video>
+				  </div>
+				  
+				</div>
+			  </div>
+
+		</section>
+
+	</main>
+	<div class="interactions-container">
+		<div class="interactions">
+			<div class="logos">
+				<div class="top">
+					<a class="scroll-top" onclick="scrollToTop()" id="up-arrow">&#8593;</a><a>TOP</a>
+				</div>
+				<img src="images/facebook_logo.png"></img>
+
+				<img src="images/instagram_logo.png"></img>
+
+				<img src="images/pintrest_logo.png"></img>
+
+				<img src="images/youtube_logo.png"></img>
+			</div>
 		</div>
-		
-		<div class="footer-container">
-			<div class="footer-inside">
-				<div class="first">
-					<ul>
-						<li>Speakers</li>
-						<li>Components</li>
-						<li>Refurbished</li>
-						<li>Find A Store</li>
-						
-					</ul>
-				</div>
-				<div class="second">
-					<ul>
-						<li>Support</li>
-						<li>Explore</li>
-						<li>About</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-				<div class="third">
-					<ul>
-						<li>Press</li>
-						<li>Warranty</li>
-						<li>Military</li>
-						<li>Apps</li>
-						
-					</ul>
-				</div>
-				<div class="fourth">
-					<ul>
-						<li>Privacy</li>
-						<li>Terms</li>
-						<li>Legal</li>
-						<li>News</li>
-					</ul>
-				</div>
+		<div class="email">
+
+			<img src="images/email_logo.png"></img>
+			<p>EMAIL SIGN UP</p>
+		</div>
+	</div>
+
+	<div class="footer-container">
+		<div class="footer-inside">
+			<div class="first">
+				<ul>
+					<li>Speakers</li>
+					<li>Components</li>
+					<li>Refurbished</li>
+					<li>Find A Store</li>
+
+				</ul>
 			</div>
-		  </div>
+			<div class="second">
+				<ul>
+					<li>Support</li>
+					<li>Explore</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="third">
+				<ul>
+					<li>Press</li>
+					<li>Warranty</li>
+					<li>Military</li>
+					<li>Apps</li>
+
+				</ul>
+			</div>
+			<div class="fourth">
+				<ul>
+					<li>Privacy</li>
+					<li>Terms</li>
+					<li>Legal</li>
+					<li>News</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 		<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 		<script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
 		<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 		<script src="scripts/script.min.js?cachebuster=1"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 		<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 	</body>
 </html>

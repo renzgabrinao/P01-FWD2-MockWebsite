@@ -28,10 +28,10 @@ $(".show-slider").slick({
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 5,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -60,7 +60,7 @@ $(".show-slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-});
+})(jQuery);
 
 function scrollToTop() {
   window.scrollTo(0, 0);
@@ -94,5 +94,36 @@ videoPopup.addEventListener("click", function () {
   document.body.style.overflow = "auto";
   video.pause();
 });
+
+//End of Video Popup Script
+
+// Start of Video Popup Script
+
+//Video element
+var video = document.querySelector("#video-id");
+var playButton = document.getElementById("play-button");
+var closeButton = document.getElementById("close-button");
+var videoPopup = document.getElementById("video-popup");
+
+//Play video
+playButton.addEventListener("click", function () {
+  videoPopup.style.display = "block";
+  document.body.style.overflow = "hidden";
+  // video.play();
+});
+
+//Close video
+closeButton.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+// //Click outside video
+// videoPopup.addEventListener("click", function() {
+//   videoPopup.style.display = "none";
+//   document.body.style.overflow = "auto";
+//   video.pause();
+// });
 
 //End of Video Popup Script
