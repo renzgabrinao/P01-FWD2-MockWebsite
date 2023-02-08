@@ -1,7 +1,59 @@
+@use "../global";
+
 .banner-carousel {
 
   .banner {
     z-index: 1;
+    @for $i from 1 through 7 {
+      .banner-0#{$i} {
+        display: none;
+        background-color: rgb(255, 255, 255, 0.8);
+        position: absolute;
+        top: 7%;
+        right: 0;
+        width: 35%;
+        z-index: 2;
+        padding: 3%;
+
+        h1,
+        h2 {
+          margin: 0;
+          color: rgb(124, 123, 123);
+        }
+
+        h1 {
+          font-size: 2.5em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+          font-weight: 350;
+        }
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          background-color: rgb(255, 120, 0);
+          border-radius: 7px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 15px;
+          margin-top: 25px;
+        }
+      }
+    }
+    .slick-list {
+      .slick-track {
+        @for $i from 0 through 7 {
+          #slick-slide0#{$i} {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 
   // buttons styling
@@ -19,14 +71,14 @@
     // prev btn
     &:not(.slick-next) {
       left: 0.5%;
-      top: 50%;
+      top: calc(50% - 25px);
       background: url("../../images/banner-carousel-prev.svg") center no-repeat;
     }
 
     // next btn
     &:not(.slick-prev) {
       right: 0.5%;
-      top: 50%;
+      top: calc(50% - 25px);      
       background: url("../../images/banner-carousel-next.svg") center no-repeat;
     }
   }
@@ -47,8 +99,8 @@
     li {
       button {
         cursor: pointer;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border: none;
         border-radius: 50%;
         background-color: rgba(255, 120, 0, 0.4);
@@ -62,6 +114,85 @@
       }
     }
   }
+}
+
+@media (min-width: global.$device-small) {
+  .banner-carousel {
+    .banner {
+    @for $i from 1 through 7 {    
+      .banner-0#{$i} {
+        display: block;
+      }
+    }
+
+    }
+    .slick-dots {
+      width: 30%;
+      left: 35%;
+
+      li {
+        button {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: global.$device-med) {
+  .banner-carousel {
+    .banner {
+      @for $i from 1 through 7 {
+        .banner-0#{$i} {
+          h1 {
+              font-size: 3em;
+            }
+          
+          h2 {
+            font-size: 2em;
+            font-weight: 350;
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      width: 25%;
+      left: 37.5%;
+  
+      li {
+        button {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: global.$device-large) {
+  .banner-carousel {
+    .banner {
+      @for $i from 1 through 7 {
+        .banner-0#{$i} {
+          h1 {
+            font-size: 3.5em;
+          }
+  
+          h2 {
+            font-size: 2.5em;
+            font-weight: 350;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: global.$device-xlarge) {
+
 }
 
 

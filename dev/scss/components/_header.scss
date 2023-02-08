@@ -199,6 +199,13 @@ header {
   }
 }
 
+#main {
+  transition: all 0.2s ease-in-out;
+  &.active {
+    margin-top: 320px;
+  }
+}
+
 @media (min-width: 960px) {
   header {
     display: flex;

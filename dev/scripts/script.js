@@ -1,12 +1,13 @@
 // Write your JavaScript here...
 
+// hamburger
 $(".hamburger").click(() => {
   $(".hamburger").toggleClass("active");
   $(".nav-bar").toggleClass("active");
+  $("#main").toggleClass("active");
 });
 
 // Toggle search bar
-
 $(".search-button").click(() => {
   $(".search-bar").toggleClass("active");
 });
@@ -16,7 +17,6 @@ $(".close-button").click(() => {
 });
 
 // Banner carousel
-
 $(".banner").slick({
   fade: true,
   speed: 1000,
