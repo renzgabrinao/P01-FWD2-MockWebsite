@@ -7,12 +7,15 @@
 $footer-text-color: grey;
 $hover-orange: #f15a24;
 
+// Footer
+// Footer Container
+
 .footer-container{
 
     width: 100%;
     border-top: 1px --color-black solid;
 
-    
+    // Footer Inside Container
     .footer-inside{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -33,11 +36,15 @@ $hover-orange: #f15a24;
             cursor: pointer;
         }
     }
+    // ------------------ MEDIA QUERIES ------------------ //
+
+    // Media Query for 500px and below
     @media (max-width: 500px) {
       .footer-inside {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+    // Media Query for 370px and below
     @media (max-width: 370px) {
         .footer-inside {
 
