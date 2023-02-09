@@ -44,6 +44,7 @@ $(".show-slider").slick({
       },
     },
 
+
     {
       breakpoint: 800,
       settings: {
@@ -54,15 +55,18 @@ $(".show-slider").slick({
     {
       breakpoint: 480,
       settings: {
+
         slidesToShow: 8,
         slidesToScroll: 1,
+
+
       },
     },
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
   ],
-})(jQuery);
+});
 
 function scrollToTop() {
   window.scrollTo(0, 0);
