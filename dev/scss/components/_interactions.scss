@@ -1,18 +1,23 @@
 @use "./components/main" ;
 @use "./global";
+
+// smooth scroll
 html{
     scroll-behavior: smooth;
 }
 
+// interactions container 
 .interactions-container{
     width: 100%;
     display: grid;
     grid-template-columns: 75% 25%;
 }
+
 .top{
     padding-top: 20px;
 }
 
+// interactions 
 .interactions{
     display: flex;
     padding-left: 70px;
@@ -29,7 +34,7 @@ html{
 }
 
 
-
+// up arrow
 #up-arrow{
     scroll-behavior: smooth;
     
@@ -38,6 +43,8 @@ html{
     }
 }
 
+
+// email
 .email{
     display: flex;
     padding-left: 70px;
@@ -55,7 +62,9 @@ html{
 }
 
 
+// ------------------ MEDIA QUERIES ------------------ //
 
+// Media Query for 595px and below
 @media (max-width: 595px) {
     .interactions-container {
 

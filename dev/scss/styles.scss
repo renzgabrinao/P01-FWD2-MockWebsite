@@ -1,10 +1,10 @@
 // Place your Sass imports here...
+@use "./components/show-by-room";
 @use "./global";
 @use "./components/header";
 @use "./components/main";
 @use "./components/best-sellers";
 @use "./components/footer";
-@use "./components/show-by-room";
 @use "./components/interactions";
 @use "./components/video-popup";
 
