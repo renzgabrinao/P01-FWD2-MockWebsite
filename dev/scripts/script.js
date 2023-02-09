@@ -42,7 +42,7 @@ $(".show-slider").slick({
         dots: false,
       },
     },
-    
+
     {
       breakpoint: 800,
       settings: {
@@ -53,10 +53,10 @@ $(".show-slider").slick({
     {
       breakpoint: 480,
       settings: {
-        
+
         slidesToShow: 8,
         slidesToScroll: 1,
-        
+
 
       },
     },
@@ -64,7 +64,7 @@ $(".show-slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-})(jQuery);
+});
 
 function scrollToTop() {
   window.scrollTo(0, 0);
