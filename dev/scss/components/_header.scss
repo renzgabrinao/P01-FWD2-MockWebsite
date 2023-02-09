@@ -95,7 +95,12 @@ header {
 
     // audio engine burger styling
     .logo {
-      margin: auto 0;
+      a {
+        display: block;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
     }
 
     // hamburger icon styling
