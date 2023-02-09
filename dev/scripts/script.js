@@ -1,18 +1,26 @@
 // Write your JavaScript here...
 
+// hamburger
 $(".hamburger").click(() => {
   $(".hamburger").toggleClass("active");
   $(".nav-bar").toggleClass("active");
+  $("#main").toggleClass("active");
 });
 
 // Toggle search bar
-
 $(".search-button").click(() => {
   $(".search-bar").toggleClass("active");
 });
 
 $(".close-button").click(() => {
   $(".search-bar").toggleClass("active");
+});
+
+// Banner carousel
+$(".banner").slick({
+  fade: true,
+  speed: 1000,
+  dots: true,
 });
 
 // Shop By Room
@@ -56,12 +64,11 @@ $(".show-slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-}) (jQuery);
+})(jQuery);
 
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
-
 
 // Start of Video Popup Script
 
@@ -72,14 +79,45 @@ var closeButton = document.getElementById("close-button");
 var videoPopup = document.getElementById("video-popup");
 
 //Play video
-playButton.addEventListener("click", function() {
+playButton.addEventListener("click", function () {
+  videoPopup.style.display = "block";
+  document.body.style.overflow = "hidden";
+  video.play();
+});
+
+//Close video
+closeButton.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//Click outside video
+videoPopup.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//End of Video Popup Script
+
+// Start of Video Popup Script
+
+//Video element
+var video = document.querySelector("#video-id");
+var playButton = document.getElementById("play-button");
+var closeButton = document.getElementById("close-button");
+var videoPopup = document.getElementById("video-popup");
+
+//Play video
+playButton.addEventListener("click", function () {
   videoPopup.style.display = "block";
   document.body.style.overflow = "hidden";
   // video.play();
 });
 
 //Close video
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   videoPopup.style.display = "none";
   document.body.style.overflow = "auto";
   video.pause();
@@ -91,6 +129,5 @@ closeButton.addEventListener("click", function() {
 //   document.body.style.overflow = "auto";
 //   video.pause();
 // });
-
 
 //End of Video Popup Script
