@@ -56,7 +56,7 @@ $orange: var(--color-orange);
     width: 100%;
     height: 100%;
     background-color: var(--color-transparent-black);
-    z-index: 1000;
+    z-index: 100;
 
     .pop-up-element{
       position: absolute;
@@ -115,9 +115,9 @@ $orange: var(--color-orange);
 
 //media queries for tablet min width
 @media (min-width: 768px) {
-    .video-popup-container{
-        // width: 650px;
-    }
+    // .video-popup-container{
+    //     // width: 650px;
+    // }
     .video-popup-close{
         width: 101%;
     }
