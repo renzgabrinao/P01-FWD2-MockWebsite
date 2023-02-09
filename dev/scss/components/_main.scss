@@ -108,7 +108,7 @@
     }
 }
 
-@media(min-width: 480px){
+@media(min-width: global.$device-small){
     .all-new-container{
         background-image: url(../images/bg-all-new-section.jpg);
         background-blend-mode: normal;
@@ -262,7 +262,7 @@
 }
 
 
-@media(min-width: 768px){
+@media(min-width: global.$device-med){
     .all-new-container{
         height: 45vh;
         min-height: 55vh;
@@ -327,7 +327,7 @@
     }
 }
 
-@media(min-width: 1068px){
+@media(min-width: global.$device-large){
     .all-new-container{
         min-height: 70vh;
         height: 50vh;
@@ -356,7 +356,7 @@
     }
 }
 
-@media(min-width: 1300px){
+@media(min-width: global.$device-xlarge){
     .all-new-container{
         min-height: 80vh;
         .sub-contents {
