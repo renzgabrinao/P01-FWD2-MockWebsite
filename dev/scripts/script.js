@@ -21,6 +21,7 @@ $(".banner").slick({
   fade: true,
   speed: 1000,
   dots: true,
+  slidesToShow: 1,
 });
 
 // Shop By Room
@@ -42,6 +43,7 @@ $(".show-slider").slick({
         dots: false,
       },
     },
+
 
     {
       breakpoint: 800,

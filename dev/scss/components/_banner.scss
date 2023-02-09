@@ -4,6 +4,7 @@
 
   // banner slick styling
   .banner {
+
     z-index: 1;
     @for $i from 1 through 7 {
       .banner-0#{$i} {
@@ -12,7 +13,7 @@
         position: absolute;
         top: 7%;
         right: 0;
-        width: 35%;
+        width: 40%;
         z-index: 2;
         padding: 3%;
 
