@@ -62,15 +62,34 @@ $hover-orange: orange;
   }
 }
 @media (max-width: 460px) {
+  h1{
+    padding-bottom: 20px;
+  }
   .speakers-items {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto;
+    justify-content: start;
     p{
       display: flex;
-      justify-content: center;
+      font-size: 19px;
+      position: relative;
+      bottom: 83%;
+      padding-top: 10px;
+      padding-left: 20px;
     }
-    .speakers-items button{
-      display: inline;
+    img{
+      position: relative;
+      display: flex;
+      padding-left: 20px;
+      height:150px;
+    }
+     button{
+     position: relative;
+     display: flex;
+     left: 60%;
+     text-align: center;
+     justify-content: center;
+     bottom: 70%;
+     padding: 10px;
     }
   }
 }
