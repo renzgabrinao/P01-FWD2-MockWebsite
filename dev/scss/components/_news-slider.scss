@@ -47,45 +47,34 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    .news-next, .news-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 100;
-        cursor: pointer;
-        font-size: 2em;
-        color: var(--color-orange);
+    // .news-next, .news-prev {
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     z-index: 100;
+    //     cursor: pointer;
+    //     font-size: 2em;
+    //     color: var(--color-orange);
+    // }
+    .slick-prev{
+        right: 0.5%;
+        top: calc(50% - 25px);      
+        background: url("../../images/chevron-right-solid.svg") center no-repeat;
+        color: $hover-orange;
     }
-    .news-prev {
-        left: 10px;
+    .slick-next {
+        left: 0.5%;
+        top: calc(50% - 25px);      
+        background: url("../../images/banner-carousel-next.svg") center no-repeat;
     }
-    .news-next {
-        right: 10px;
-    }   
-}
+}   
 
 
-
-
-
-// .news-slide{
-//     margin-right: 20px;
-//     height: auto;
-//     margin: 0 30px 0 30px;
-//     img{
-//         width: 100%;
-//         height: auto;
-//         max-width: 150px;
-//         margin: 0 auto  ;
-//     }
-// }
-
-
+//border-none color transparent hide buttons height for icon...
 
 @media screen and (min-width: 500px) {
     .news-slide{
         margin:  0 15vw 0 15vw;
-
     }
 }
 @media screen and (min-width: 320px) {
