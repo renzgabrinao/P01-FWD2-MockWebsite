@@ -47,11 +47,12 @@ html{
 // email
 .email{
     display: flex;
-    padding-left: 70px;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 30px;
     white-space: nowrap;
+    padding-left: 40px;
+    width: 30%;
     img{
         height: 50px;
     }
@@ -63,6 +64,17 @@ html{
 
 
 // ------------------ MEDIA QUERIES ------------------ //
+
+@media (max-width: 800px) {
+    .interactions-container{
+        grid-template-columns: 65% 35%;
+    }
+    .email{
+        padding-bottom: 30px;
+        padding-left: 40px;
+        
+    }
+  }
 
 // Media Query for 595px and below
 @media (max-width: 595px) {
@@ -77,5 +89,6 @@ html{
     }
     .email{
         padding-top: 10px;
+        padding-left: 70px;
     }
   }

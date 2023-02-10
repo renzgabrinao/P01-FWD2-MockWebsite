@@ -64,7 +64,7 @@ $(".show-slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
-})(jQuery);
+});
 
 function scrollToTop() {
   window.scrollTo(0, 0);
