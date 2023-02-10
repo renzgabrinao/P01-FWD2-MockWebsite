@@ -1,18 +1,27 @@
 // Write your JavaScript here...
 
+// hamburger
 $(".hamburger").click(() => {
   $(".hamburger").toggleClass("active");
   $(".nav-bar").toggleClass("active");
+  $("#main").toggleClass("active");
 });
 
 // Toggle search bar
-
 $(".search-button").click(() => {
   $(".search-bar").toggleClass("active");
 });
 
 $(".close-button").click(() => {
   $(".search-bar").toggleClass("active");
+});
+
+// Banner carousel
+$(".banner").slick({
+  fade: true,
+  speed: 1000,
+  dots: true,
+  slidesToShow: 1,
 });
 
 // Shop By Room
@@ -26,26 +35,31 @@ $(".show-slider").slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         infinite: true,
         dots: false,
       },
     },
+
+
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+
+        slidesToShow: 8,
         slidesToScroll: 1,
+
+
       },
     },
     // You can unslick at a given breakpoint now by adding:
@@ -58,6 +72,36 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
+// Start of Video Popup Script
+
+//Video element
+var video = document.querySelector("#video-id");
+var playButton = document.getElementById("play-button");
+var closeButton = document.getElementById("close-button");
+var videoPopup = document.getElementById("video-popup");
+
+//Play video
+playButton.addEventListener("click", function () {
+  videoPopup.style.display = "block";
+  document.body.style.overflow = "hidden";
+  video.play();
+});
+
+//Close video
+closeButton.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//Click outside video
+videoPopup.addEventListener("click", function () {
+  videoPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+  video.pause();
+});
+
+//End of Video Popup Script
 
 // Start of Video Popup Script
 
@@ -68,13 +112,13 @@ var closeButton = document.getElementById("close-button");
 var videoPopup = document.getElementById("video-popup");
 
 //Play video
-playButton.addEventListener("click", function() {
+playButton.addEventListener("click", function () {
   videoPopup.style.display = "block";
   document.body.style.overflow = "hidden";
 });
 
 //Close video
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   videoPopup.style.display = "none";
   document.body.style.overflow = "auto";
   video.pause();
@@ -126,5 +170,4 @@ $(".news-slider").slick({
 //   $('.js-slider').not('.slick-initialized').slick('resize');
 // });
 
-
-// End of In the News Slider //
+//End of Video Popup Script
