@@ -118,13 +118,13 @@ $(".news-slider").slick({
 });
 
 
-$(window).resize(function () {
-  $('.js-slider').not('.slick-initialized').slick('resize');
-});
+// $(window).resize(function () {
+//   $('.js-slider').not('.slick-initialized').slick('resize');
+// });
 
-$(window).on('orientationchange', function () {
-  $('.js-slider').not('.slick-initialized').slick('resize');
-});
+// $(window).on('orientationchange', function () {
+//   $('.js-slider').not('.slick-initialized').slick('resize');
+// });
 
 
 // End of In the News Slider //
