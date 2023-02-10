@@ -221,8 +221,9 @@
             bottom: 35%;
           }
   }
-    //Media Query for 483px and under
+    //Media Query for 485px and under
   @media (max-width:485px) {
+    .show-slider {
     .slick-arrow.slick-hidden {
       visibility: hidden !important;
       
@@ -259,6 +260,7 @@
         .slick-next{
             display: none;
         }
+    }
         
         
     }
