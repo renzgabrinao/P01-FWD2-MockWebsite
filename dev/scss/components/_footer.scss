@@ -48,9 +48,9 @@ $hover-orange: #f15a24;
     @media (max-width: 370px) {
         .footer-inside {
 
-
-          grid-template-columns: repeat(1, 1fr);
-          padding-left: 0;
+          display: block;
+          padding-left: 0px;
+          
 
         }
       }
