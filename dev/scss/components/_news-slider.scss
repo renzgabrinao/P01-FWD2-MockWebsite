@@ -1,6 +1,5 @@
-@use "./components/main" ;
-@use "./global";
-
+@import "./components/main";
+@import "./global";
 
 .news-section {
     width: 100%;
@@ -8,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // position: relative;
 }
 
 .news-container {
@@ -24,76 +22,98 @@
         padding-top: 80px;
         justify-content: center;
         text-align: center;
-        font-size: 10vw;
+        font-size: 2.8rem;
         font-weight: 300;
     }
 }
-
 .news-slider-container {
-
-    .news-slider {
-        position: relative;
-    }
-    .news-slide{
-        // margin-right: 90px;
-        img{
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            margin: 0 auto  ;
-        }
-    }
-
     width: 100%;
     display: flex;
     flex-direction: column;
-    // .news-next, .news-prev {
-    //     position: absolute;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     z-index: 100;
-    //     cursor: pointer;
-    //     font-size: 2em;
-    //     color: var(--color-orange);
-    // }
-    .slick-prev{
-        right: 0.5%;
-        top: calc(50% - 25px);      
-        background: url("../../images/chevron-right-solid.svg") center no-repeat;
-        color: $hover-orange;
+
+    .news-slider {
+        width: 80%;
+        margin: 0 auto;
     }
-    .slick-next {
-        left: 0.5%;
-        top: calc(50% - 25px);      
-        background: url("../../images/banner-carousel-next.svg") center no-repeat;
+
+    .news-slide {
+        img {
+            height: auto;
+            margin: 0 auto;
+        }
     }
-}   
+
+    .slick-track {
+        margin-left: auto;
+        margin-right: auto
+    }
 
 
-//border-none color transparent hide buttons height for icon...
+    .slick-next,
+    .slick-prev {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        padding: 0;
+        border: none;
+        color: transparent;
+        z-index: 20;
+        cursor: pointer;
 
-@media screen and (min-width: 500px) {
-    .news-slide{
-        margin:  0 15vw 0 15vw;
+
+        &:not(.slick-prev) {
+            right: -10%;
+            top: calc(50% - 25px);
+            background-color: $orange;
+            mask: url("../../images/banner-carousel-next.svg");
+            mask-repeat: no-repeat;
+            -webkit-mask: url("../../images/banner-carousel-next.svg");
+            -webkit-mask-repeat: no-repeat;
+
+        }
+
+        &:not(.slick-next) {
+            left: -10%;
+            top: calc(50% - 25px);
+            background-color: $orange;
+            mask: url("../../images/banner-carousel-prev.svg");
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask: url("../../images/banner-carousel-prev.svg");
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
     }
+
 }
-@media screen and (min-width: 320px) {
 
+
+//x-small screen size adds padding when no slider is in effect
+@media screen and (min-width:$device-xsmall) {
+    
     .news-container {
         h1 {
             margin-bottom: 0;
         }
     }
-    .news-slide{
+    .news-slide {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 15vw 30px  15vw 30px;
+        margin: 15vw 30px 15vw 30px;
     }
-    .news-next{
+
+    .news-next {
         display: none;
     }
-    .news-prev{
+    .news-prev {
         display: none;
+    }
+}
+//adds padding to slides when slick slider is in effect
+//responsive elements of slider configured in script.js file.
+@media screen and (min-width:$device-small) {
+    .news-slide {
+        margin: 5vw 30px 5vw 30px;
     }
 }

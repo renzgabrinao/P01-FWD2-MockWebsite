@@ -126,14 +126,56 @@ closeButton.addEventListener("click", function () {
 
 //End of Video Popup Script
 
-$(".news-slider").slick({
+//Start of News Slider
+var breakpoint = 500;
+var slider = $(".news-slider");
+var slickSettings = {
   dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 1,
-  
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  variableWidth: false,
+  mobileFirst:false,
+  arrows: true,
+  responsive: [
+    { breakpoint: 1200, 
+      settings: { 
+        slidesToShow: 4,
+        slidesToScroll: 1, 
+      } 
+    },
+    { breakpoint: 850,
+      settings: {
+        slidesToShow:3,
+        slidesToScroll:1,
+      }
 
+    },
+    { breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    { breakpoint: 500,
+      settings: 
+        "unslick"
+    }
+  ]
+};
+
+slider.slick(slickSettings);
+
+$(window).on("resize", function() {
+  if ($(this).width() >= breakpoint) {
+    if (slider.hasClass("slick-initialized")) {
+      return;
+    }
+    slider.slick(slickSettings);
+  }
 });
 
 // Start of In the News Slider //

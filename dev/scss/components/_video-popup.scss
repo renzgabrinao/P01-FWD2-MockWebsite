@@ -1,19 +1,10 @@
-@use "./components/main" ;
-@use "./global";
-
-$black: var(--color-black);
-$white: var(--color-white);
-$transparent-black: var(--color-transparent-black);
-$orange: var(--color-orange);
-
-
-
+@import "./components/main" ;
+@import "./global";
 
 .video-container{
-    
+
     position: relative;
     transition: all 0.2s ease-in-out;
-
     h2{
         position: absolute;
         width: 100%;
@@ -71,7 +62,6 @@ $orange: var(--color-orange);
     .video-popup-close{
       display: flex;
       justify-content: flex-end;
-    //   width: 100vw;
       background: none;
     }
 
@@ -119,9 +109,7 @@ $orange: var(--color-orange);
 
 //media queries for tablet min width
 @media (min-width: 768px) {
-    // .video-popup-container{
-    //     // width: 650px;
-    // }
+
     .video-popup-close{
         width: 101%;
     }
