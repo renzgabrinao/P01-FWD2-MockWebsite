@@ -107,6 +107,3 @@ dev/scripts/script.min.js.map
 *.swo
 *.swp
 *.vi
-*~
-*.dist
-dist/
