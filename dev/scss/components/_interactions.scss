@@ -24,6 +24,7 @@ html{
     img{
         height: 50px;
         padding-top: 50px;
+        cursor: pointer;
     }
     a{
         color: var(--color-orange);
@@ -55,10 +56,11 @@ html{
     width: 30%;
     img{
         height: 50px;
+        cursor: pointer;
     }
     p{
         font-size: large;
-
+        cursor: pointer;
     }
 }
 
