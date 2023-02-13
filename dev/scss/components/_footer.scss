@@ -31,10 +31,13 @@ $hover-orange: #f15a24;
         padding-bottom: 15px;
         font-size: 18px;
         color: $footer-text-color;
-        &:hover {
-            color: $hover-orange; 
-            cursor: pointer;
-        }
+        a{
+            text-decoration: none;
+            color: var(--color-black);
+            &:hover{
+                color: $hover-orange;
+            }
+        }   
     }
     // ------------------ MEDIA QUERIES ------------------ //
 
