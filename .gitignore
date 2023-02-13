@@ -90,8 +90,6 @@ dev/styles/components/*.css
 dev/styles/components/*.map
 
 
-dist/
-
 # Ignore compiled JS file
 dev/scripts/script.min.js
 dev/scripts/script.min.js.map
