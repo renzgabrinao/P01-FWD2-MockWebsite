@@ -109,3 +109,4 @@ dev/scripts/script.min.js.map
 *.vi
 *~
 *.dist
+dist/
