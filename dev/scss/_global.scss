@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-$device-xsmall:"320px";
+$device-xsmall: "320px";
 $device-small: "640px";
 $device-med: "768px";
 $device-large: "1024px";
@@ -10,11 +10,11 @@ $white: var(--color-white);
 $transparent-black: var(--color-transparent-black);
 $orange: var(--color-orange);
 
-:root{
+:root {
     --color-white: #fff;
     --color-black: #000;
     --color-orange: #fc851e;
-    --color-grey:#666;
+    --color-grey: #666;
     --color-transparent-black: #000000cc;
 }
 
@@ -25,7 +25,7 @@ body{
     font-family: "Source Sans Pro", sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }

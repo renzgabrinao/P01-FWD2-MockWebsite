@@ -26,6 +26,7 @@
         font-weight: 300;
     }
 }
+
 .news-slider-container {
     width: 100%;
     display: flex;
@@ -90,12 +91,13 @@
 
 //x-small screen size adds padding when no slider is in effect
 @media screen and (min-width:$device-xsmall) {
-    
+
     .news-container {
         h1 {
             margin-bottom: 0;
         }
     }
+
     .news-slide {
         display: flex;
         align-items: center;
@@ -106,10 +108,12 @@
     .news-next {
         display: none;
     }
+
     .news-prev {
         display: none;
     }
 }
+
 //adds padding to slides when slick slider is in effect
 //responsive elements of slider configured in script.js file.
 @media screen and (min-width:$device-small) {

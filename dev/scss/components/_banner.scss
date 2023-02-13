@@ -68,20 +68,30 @@
     height: 50px;
     cursor: pointer;
     color: transparent;
+    background-color: global.$orange;
+    top: calc(50% - 25px);
 
 
     // prev btn
     &:not(.slick-next) {
       left: 0.5%;
-      top: calc(50% - 25px);
-      background: url("../../images/banner-carousel-prev.svg") center no-repeat;
+      mask: url("../../images/banner-carousel-prev.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      --webkit-mask: url("../../images/banner-carousel-prev.svg");
+      --webkit-mask-repeat: no-repeat;
+      --webkit-mask-position: center;
     }
 
     // next btn
     &:not(.slick-prev) {
       right: 0.5%;
-      top: calc(50% - 25px);      
-      background: url("../../images/banner-carousel-next.svg") center no-repeat;
+      mask: url("../../images/banner-carousel-next.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      --webkit-mask: url("../../images/banner-carousel-prev.svg");
+      --webkit-mask-repeat: no-repeat;
+      --webkit-mask-position: center; 
     }
   }
 
