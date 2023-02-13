@@ -1,5 +1,3 @@
-# FWD HTML Project
+# FWD2 HTML Project
 
-This is an FWD2 HTML project.
-In the command line, write:
-gulp build --no-experimental-fetch
+This is the FWD2 Group Project for SSD 2022-23 for BCIT
