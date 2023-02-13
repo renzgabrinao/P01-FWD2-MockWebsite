@@ -78,9 +78,9 @@
       mask: url("../../images/banner-carousel-prev.svg");
       mask-repeat: no-repeat;
       mask-position: center;
-      --webkit-mask: url("../../images/banner-carousel-prev.svg");
-      --webkit-mask-repeat: no-repeat;
-      --webkit-mask-position: center;
+      -webkit-mask: url("../../images/banner-carousel-prev.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
     }
 
     // next btn
@@ -89,9 +89,9 @@
       mask: url("../../images/banner-carousel-next.svg");
       mask-repeat: no-repeat;
       mask-position: center;
-      --webkit-mask: url("../../images/banner-carousel-prev.svg");
-      --webkit-mask-repeat: no-repeat;
-      --webkit-mask-position: center; 
+      -webkit-mask: url("../../images/banner-carousel-next.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center; 
     }
   }
 
