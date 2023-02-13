@@ -44,7 +44,6 @@ $(".show-slider").slick({
       },
     },
 
-
     {
       breakpoint: 800,
       settings: {
@@ -55,11 +54,8 @@ $(".show-slider").slick({
     {
       breakpoint: 480,
       settings: {
-
         slidesToShow: 8,
         slidesToScroll: 1,
-
-
       },
     },
     // You can unslick at a given breakpoint now by adding:
@@ -71,7 +67,6 @@ $(".show-slider").slick({
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
-
 
 // Start of Video Popup Script
 
@@ -109,38 +104,37 @@ var slickSettings = {
   pauseOnFocus: false,
   pauseOnHover: false,
   variableWidth: false,
-  mobileFirst:false,
+  mobileFirst: false,
   arrows: true,
   responsive: [
-    { breakpoint: 1200, 
-      settings: { 
-        slidesToShow: 4,
-        slidesToScroll: 1, 
-      } 
-    },
-    { breakpoint: 850,
+    {
+      breakpoint: 1200,
       settings: {
-        slidesToShow:3,
-        slidesToScroll:1,
-      }
-
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
     },
-    { breakpoint: 700,
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 700,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-      }
+      },
     },
-    { breakpoint: 500,
-      settings: 
-        "unslick"
-    }
-  ]
+    { breakpoint: 500, settings: "unslick" },
+  ],
 };
 
 slider.slick(slickSettings);
 
-$(window).on("resize", function() {
+$(window).on("resize", function () {
   if ($(this).width() >= breakpoint) {
     if (slider.hasClass("slick-initialized")) {
       return;
